@@ -1,0 +1,65 @@
+{
+  "name": "homekit-qrcode",
+  "version": "0.0.4",
+  "description": "Generate a HomeKit pairing QR code for your HomeKit accessory",
+  "keywords": [
+    "apple",
+    "code",
+    "esp8266",
+    "esp32",
+    "homebridge",
+    "homekit",
+    "pairing",
+    "qrcode"
+  ],
+  "homepage": "https://github.com/simongolms/homekit-qrcode.git",
+  "license": "MIT",
+  "author": {
+    "name": "Simon Golms",
+    "email": "development@gol.ms",
+    "url": "https://gol.ms"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "bin": {
+    "homekit-qrcode": "lib/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simongolms/homekit-qrcode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/simongolms/homekit-qrcode/issues"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
+    "repair": "rm -rf ./lib ./node_modules ./package-lock.json && npm install",
+    "release": "rm -rf ./lib && npm run build && dotenv semantic-release --no-ci -d",
+    "release:ci": "npm run build && dotenv semantic-release"
+  },
+  "dependencies": {
+    "qrcode": "^1.4.4",
+    "yargs": "^16.2.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/exec": "^5.0.0",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/github": "^7.2.0",
+    "@types/node": "^14.14.16",
+    "@types/qrcode": "^1.3.5",
+    "@types/yargs": "^15.0.12",
+    "dotenv": "^8.2.0",
+    "husky": "^4.3.6",
+    "nodemon": "^2.0.6",
+    "semantic-release": "^17.3.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
+}
