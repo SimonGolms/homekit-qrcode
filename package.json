@@ -39,7 +39,7 @@
     "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
     "repair": "rm -rf ./lib ./node_modules ./package-lock.json && npm install",
     "release": "rm -rf ./lib && npm run build && dotenv semantic-release --no-ci -d",
-    "release:ci": "npm run build && dotenv semantic-release"
+    "release:ci": "npm run build && semantic-release"
   },
   "dependencies": {
     "qrcode": "^1.4.4",
