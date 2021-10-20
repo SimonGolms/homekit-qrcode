@@ -38,8 +38,8 @@
     "build": "tsc -p .",
     "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
     "prepare": "husky install",
-    "repair": "rm -rf ./lib ./node_modules ./package-lock.json && npm install",
-    "release": "rm -rf ./lib && npm run build && dotenv semantic-release --no-ci -d",
+    "repair": "npx rimraf lib node_modules .git/hooks package-lock.json && npm install",
+    "release": "npx rimraf lib && npm run build && dotenv semantic-release --no-ci -d",
     "release:ci": "npm run build && semantic-release"
   },
   "dependencies": {
