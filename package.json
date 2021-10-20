@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "qrcode": "^1.4.4",
-    "yargs": "^16.2.0"
+    "yargs": "17.2.1"
   },
   "devDependencies": {
     "@commitlint/cli": "13.2.1",
