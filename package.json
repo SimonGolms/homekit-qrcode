@@ -45,7 +45,7 @@
     "release:ci": "npm run build && semantic-release"
   },
   "dependencies": {
-    "qrcode": "^1.4.4",
+    "qrcode": "1.4.4",
     "yargs": "17.2.1"
   },
   "devDependencies": {
@@ -63,8 +63,8 @@
     "dotenv": "10.0.0",
     "eslint": "8.0.1",
     "eslint-config-prettier": "8.3.0",
-    "husky": "7.0.2",
-    "lint-staged": "11.2.3",
+    "husky": "7.0.4",
+    "lint-staged": "11.2.4",
     "nodemon": "2.0.14",
     "prettier": "2.4.1",
     "semantic-release": "^17.3.0",
