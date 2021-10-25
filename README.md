@@ -21,30 +21,45 @@
   </a>
 </p>
 
-> Generate a HomeKit pairing QR code for your HomeKit accessory
+> Generate a HomeKit pairing QR code label for your HomeKit accessory
 
 ## Usage
 
+### CLI
+
 ```sh
-npx homekit-qrcode --category=switch --pairingCode=111-22-333
-HomeKit QR Code successfully generated
+Usage: homekit-qrcode [options]
+
+Options:
+  -h, --help                              [boolean]
+      --version      Show version number  [boolean]
+  -c, --category                          [string] [required] [choices: "other", "bridge", "fan", "garage", "lightbulb", "doorLock", "outlet", "switch", "thermostat", "sensor", "securitySystem", "door", "window", "windowCovering", "programmableSwitch", "rangeExtender", "ipCamera", "videoDoorBell", "airPurifier", "heater", "airConditioner", "humidifier", "dehumidifier", "appleTv", "speaker", "airport", "sprinkler", "faucet", "showerHead", "television", "targetController"]
+  -o, --output                            [string] [default: "qrcode.svg"]
+  -p, --pairingCode                       [string] [required]
+  -s, --setupId                           [string] [default: ""]
+
+Examples:
+  npx homekit-qrcode --category=switch --pairingCode=01234567  generates an homekit paring code label
 ```
+
+### Output
 
 ![qrcode](./docs/qrcode.png)
 
+---
+
 ## Local Development
 
-To start developing the `device-bars` web component using Stencil, clone this repo to a new directory:
-
-```sh
-git clone https://github.com/SimonGolms/homekit-qrcode.git homekit-qrcode
-cd homekit-qrcode
-git remote rm origin
-```
+### Install Dependencies
 
 ```sh
 npm install
-npm start
+```
+
+### Start Development Server
+
+```sh
+npm run start -- --category=switch --pairingCode=11122333
 ```
 
 ### Build
@@ -69,6 +84,8 @@ This command may be useful when obscure errors or issues are encountered. It rem
 npm run repair
 ```
 
+---
+
 ## Author
 
 **Simon Golms**
@@ -83,9 +100,11 @@ Give a ⭐️ if this project helped you!
 
 ## License
 
-Copyright © 2020 [Simon Golms](https://github.com/simongolms).<br />
+Copyright © 2021 [Simon Golms](https://github.com/simongolms).<br />
 This project is [MIT](https://github.com/simongolms/homekit-qrcode/blob/master/LICENSE) licensed.
 
 ## Resources
 
-- [esp-homekit](https://github.com/maximkulkin/esp-homekit)
+- https://github.com/maximkulkin/esp-homekit
+- https://developer.apple.com/documentation/homekit/hmaccessorycategory/accessory_category_types#overview
+- https://developer.apple.com/documentation/homekit/testing_your_app_with_the_homekit_accessory_simulator
