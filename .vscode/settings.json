@@ -1,0 +1,8 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "files.associations": {
+    ".gitignore": "plaintext"
+  },
+  "eslint.run": "onSave"
+}
