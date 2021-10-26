@@ -39,7 +39,7 @@ Options:
   -s, --setupId                           [string] [default: ""]
 
 Examples:
-  npx homekit-qrcode --category=switch --pairingCode=01234567  generates an homekit paring code label
+  npx homekit-qrcode --category=switch --pairingCode=01234567  Generate a QR code for a HomeKit switch
 ```
 
 ### Output
