@@ -56,6 +56,13 @@ To build `homekit-qrcode` for production, run:
 npm run build
 ```
 
+Afterwards the executable code is available under `./lib/`.
+
+```sh
+cd lib
+node index.js --category=switch --pairingCode=11122333 --setupId=3QYT
+```
+
 ### Run Tests
 
 ```sh
