@@ -77,6 +77,32 @@ This command may be useful when obscure errors or issues are encountered. It rem
 npm run repair
 ```
 
+### Release
+
+Fully automated version management and package publishing via [semantic-release](https://github.com/semantic-release). It bumps the version according to conventional commits, publishes the package to npm and release a new version to GitHub.
+
+#### Automatic Release (GitHub Action) [Recommended]
+
+Make sure that the secrets `GITHUB_TOKEN` and `NPM_TOKEN` are available in GitHub repository.
+
+```sh
+npm run release:ci
+```
+
+#### Manual Release
+
+Make sure that the environment variables `GITHUB_TOKEN` and `NPM_TOKEN` are set or declared in `.env` and a productive build was previously created via `npm run build`.
+
+```sh
+npm run release
+```
+
+You can also test the release manually by running the following command:
+
+```sh
+npm run release:dry-run
+```
+
 ---
 
 ## Author

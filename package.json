@@ -40,9 +40,10 @@
     "lint:fix": "eslint . --fix",
     "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
     "prepare": "husky install",
-    "repair": "npx rimraf lib node_modules .git/hooks package-lock.json && npm install",
-    "release": "npx rimraf lib && npm run build && dotenv semantic-release --no-ci --dry-run",
-    "release:ci": "npm run build && semantic-release"
+    "release": "dotenv semantic-release --no-ci",
+    "release:ci": "semantic-release",
+    "release:dry-run": "npm run release -- --dry-run",
+    "repair": "npx rimraf lib node_modules .git/hooks package-lock.json && npm install"
   },
   "dependencies": {
     "qrcode": "1.4.4",

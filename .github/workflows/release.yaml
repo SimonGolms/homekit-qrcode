@@ -19,7 +19,9 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm ci
-      - name: Release
+      - name: Build Package
+        run: npm run build
+      - name: Release Package
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
