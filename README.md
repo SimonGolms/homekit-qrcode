@@ -105,6 +105,29 @@ npm run release:dry-run
 
 ---
 
+## FAQ
+
+### Will my HomeKit accessory be able to pair with the generated QR code?
+
+The QR code is not the same as the pairing code, instead it consists of several parameters such as the category, a specific version and other parameters.
+This generated setup payload is the actual content of the QR code and can be generated with the [HomeKit Accessory Simulator (HAS)](https://developer.apple.com/documentation/homekit/testing_your_app_with_the_homekit_accessory_simulator) as well.
+
+![qrcode](./docs/apple-homekit-accessory-simulator.png)
+
+### How do I find out the setup id of my HomeKit Accessory?
+
+Scan the QR code with a QR scanner of your choice. You should get a text starting with `X-HM://....` . The next 9 characters are the combination of the different parameters like the pairing code and the category. The remaining characters are the setup id.
+
+```txt
+X-HM://0081YCYEP3QYT ◄── Scanned Setup Payload
+
+X-HM:// 008YCYEP 3QYT
+  ▲        ▲      ▲
+  │        │      └─── Setup ID
+  │        └── Combination of Parameters (first 9 characters)
+  └─ Starting Content
+```
+
 ## Author
 
 **Simon Golms**
