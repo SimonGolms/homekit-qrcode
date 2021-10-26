@@ -1,25 +1,11 @@
 # HomeKit QR Code
 
-<p>
-    <a href="https://www.npmjs.com/package/homekit-qrcode" target="_blank">
-    <img alt="NPM Version" src="https://img.shields.io/npm/v/homekit-qrcode.svg" />
-  </a>
-  <a href="https://github.com/simongolms/homekit-qrcode#readme" target="_blank">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
-  </a>
-  <a href="https://github.com/simongolms/homekit-qrcode/graphs/commit-activity" target="_blank">
-    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
-  </a>
-  <a href="https://github.com/simongolms/homekit-qrcode/blob/master/LICENSE" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/github/license/simongolms/homekit-qrcode" />
-  </a>
-    <a href="https://conventionalcommits.org" target="_blank">
-    <img alt="Conventional Commits" src="https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg" />
-  </a>
-    <a href="#badge">
-    <img alt="semantic-release" src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg">
-  </a>
-</p>
+[![npm version](https://img.shields.io/npm/v/homekit-qrcode.svg)](https://www.npmjs.com/package/homekit-qrcode)
+[![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/simongolms/homekit-qrcode#readme)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/simongolms/homekit-qrcode/graphs/commit-activity)
+[![License: MIT](https://img.shields.io/github/license/simongolms/homekit-qrcode)](https://github.com/simongolms/homekit-qrcode/blob/master/LICENSE)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/SimonGolms/homekit-qrcode/releases)
 
 > Generate a HomeKit pairing QR code label for your HomeKit accessory
 
