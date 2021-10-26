@@ -1,5 +1,17 @@
 # Changelog
 
+# [2.0.0-beta.2](https://github.com/simongolms/homekit-qrcode/compare/v2.0.0-beta.1...v2.0.0-beta.2) (2021-10-26)
+
+
+### Features
+
+* update cli argument setup id ([f94ea6f](https://github.com/simongolms/homekit-qrcode/commit/f94ea6f3df690dafc2d4bef780a3c92bcda1ca8d))
+
+
+### BREAKING CHANGES
+
+* set setupId to requried
+
 # [2.0.0-beta.1](https://github.com/simongolms/homekit-qrcode/compare/v1.0.0...v2.0.0-beta.1) (2021-10-26)
 
 
