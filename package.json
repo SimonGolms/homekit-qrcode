@@ -1,7 +1,7 @@
 {
   "name": "homekit-qrcode",
-  "version": "1.0.0",
-  "description": "Generate a HomeKit pairing QR code for your HomeKit accessory",
+  "version": "2.0.0-beta.2",
+  "description": "Generate a pairing HomeKit QR code label for your HomeKit accessory",
   "keywords": [
     "apple",
     "code",
@@ -36,30 +36,39 @@
   },
   "scripts": {
     "build": "tsc -p .",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
-    "repair": "rm -rf ./lib ./node_modules ./package-lock.json && npm install",
-    "release": "rm -rf ./lib && npm run build && dotenv semantic-release --no-ci -d",
-    "release:ci": "npm run build && semantic-release"
+    "prepare": "husky install",
+    "release": "dotenv semantic-release --no-ci",
+    "release:ci": "semantic-release",
+    "release:dry-run": "npm run release -- --dry-run",
+    "repair": "npx rimraf lib node_modules .git/hooks package-lock.json && npm install"
   },
   "dependencies": {
-    "qrcode": "^1.4.4",
-    "yargs": "^16.2.0"
+    "qrcode": "1.4.4",
+    "yargs": "17.2.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^11.0.0",
-    "@commitlint/config-conventional": "^11.0.0",
-    "@semantic-release/changelog": "^5.0.1",
-    "@semantic-release/exec": "^5.0.0",
-    "@semantic-release/git": "^9.0.0",
-    "@semantic-release/github": "^7.2.0",
-    "@types/node": "^14.14.16",
-    "@types/qrcode": "^1.3.5",
-    "@types/yargs": "^15.0.12",
-    "dotenv": "^8.2.0",
-    "husky": "^4.3.6",
-    "nodemon": "^2.0.6",
-    "semantic-release": "^17.3.0",
-    "ts-node": "^9.1.1",
-    "typescript": "^4.1.3"
+    "@commitlint/cli": "13.2.1",
+    "@commitlint/config-conventional": "13.2.0",
+    "@semantic-release/changelog": "6.0.0",
+    "@semantic-release/git": "10.0.0",
+    "@semantic-release/github": "8.0.1",
+    "@types/node": "16.11.6",
+    "@types/qrcode": "1.4.1",
+    "@types/yargs": "17.0.4",
+    "@typescript-eslint/eslint-plugin": "5.2.0",
+    "@typescript-eslint/parser": "5.2.0",
+    "dotenv": "10.0.0",
+    "eslint": "8.1.0",
+    "eslint-config-prettier": "8.3.0",
+    "husky": "7.0.4",
+    "lint-staged": "11.2.4",
+    "nodemon": "2.0.14",
+    "prettier": "2.4.1",
+    "semantic-release": "18.0.0",
+    "ts-node": "10.4.0",
+    "typescript": "4.4.4"
   }
 }

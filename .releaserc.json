@@ -1,5 +1,4 @@
 {
-  "branches": ["master"],
   "plugins": [
     [
       "@semantic-release/commit-analyzer",
@@ -29,22 +28,11 @@
         "changelogTitle": "# Changelog"
       }
     ],
-    [
-      "@semantic-release/exec",
-      {
-        "prepareCmd": "sed -i.bak -e 's/\\/device-bars@[0-9].[0-9].[0-9]/\\/device-bars@${nextRelease.version}/g' README.md"
-      }
-    ],
     "@semantic-release/npm",
     [
       "@semantic-release/git",
       {
-        "assets": [
-          "CHANGELOG.md",
-          "README.md",
-          "package.json",
-          "package-lock.json"
-        ],
+        "assets": ["CHANGELOG.md", "README.md", "package.json", "package-lock.json"],
         "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
     ],
