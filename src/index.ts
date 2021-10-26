@@ -8,7 +8,7 @@ import { argv } from './yargs';
 const main = async () => {
   const { category, output, pairingCode, setupId } = argv;
 
-  const categoryId = CATEGORIES.get(category);
+  const categoryId = CATEGORIES.get(category) as number;
   const filename = getFilename(output);
   const qrCodeSvg = await generateQrCodeAsSvg(categoryId, pairingCode, setupId);
   const file = createLabelAsSvg(pairingCode, qrCodeSvg);

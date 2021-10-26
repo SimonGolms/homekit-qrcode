@@ -36,10 +36,10 @@ Options:
   -c, --category                          [string] [required] [choices: "other", "bridge", "fan", "garage", "lightbulb", "doorLock", "outlet", "switch", "thermostat", "sensor", "securitySystem", "door", "window", "windowCovering", "programmableSwitch", "rangeExtender", "ipCamera", "videoDoorBell", "airPurifier", "heater", "airConditioner", "humidifier", "dehumidifier", "appleTv", "speaker", "airport", "sprinkler", "faucet", "showerHead", "television", "targetController"]
   -o, --output                            [string] [default: "qrcode.svg"]
   -p, --pairingCode                       [string] [required]
-  -s, --setupId                           [string] [default: ""]
+  -s, --setupId                           [string] [required]
 
 Examples:
-  npx homekit-qrcode --category=switch --pairingCode=01234567  Generate a QR code for a HomeKit switch
+  npx homekit-qrcode --category=switch --pairingCode=84131633 --setupId=3QYT Generate a QR code for a HomeKit switch
 ```
 
 ### Output

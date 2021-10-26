@@ -30,8 +30,7 @@ export const argv = yargs(process.argv.slice(2))
     },
     setupId: {
       alias: 's',
-      demandOption: false,
-      default: '',
+      demandOption: true,
       type: 'string',
     },
   })
@@ -43,5 +42,8 @@ export const argv = yargs(process.argv.slice(2))
     }
   })
   .usage('Usage: homekit-qrcode [options]')
-  .example('npx homekit-qrcode --category=switch --pairingCode=01234567', 'Generate a QR code for a HomeKit switch')
+  .example(
+    'npx homekit-qrcode --category=switch --pairingCode=84131633 --setupId=3QYT',
+    'Generate a QR code for a HomeKit switch',
+  )
   .parseSync();
