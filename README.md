@@ -49,7 +49,7 @@ npm install
 ### Start Development Server
 
 ```sh
-npm run start -- --category=switch --pairingCode=11122333
+npm run start -- --category=switch --pairingCode=84131633 --setupId=3QYT
 ```
 
 ### Build
@@ -64,7 +64,7 @@ Afterwards the executable code is available under `./lib/`.
 
 ```sh
 cd lib
-node index.js --category=switch --pairingCode=11122333 --setupId=3QYT
+node index.js --category=switch --pairingCode=84131633 --setupId=3QYT
 ```
 
 ### Run Tests
