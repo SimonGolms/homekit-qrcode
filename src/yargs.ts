@@ -27,6 +27,7 @@ export const argv = yargs(process.argv.slice(2))
     pairingCode: {
       alias: 'p',
       demandOption: true,
+      describe: '8 digits pairing code',
       type: 'string',
     },
     setupId: {
