@@ -46,6 +46,7 @@
     "repair": "npx rimraf lib node_modules .git/hooks package-lock.json && npm install"
   },
   "dependencies": {
+    "canvas": "2.8.0",
     "qrcode": "1.4.4",
     "yargs": "17.2.1"
   },
