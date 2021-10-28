@@ -1,6 +1,6 @@
 {
   "name": "homekit-qrcode",
-  "version": "2.0.0",
+  "version": "3.0.0-beta.1",
   "description": "Generate a pairing HomeKit QR code label for your HomeKit accessory",
   "keywords": [
     "apple",
@@ -46,6 +46,7 @@
     "repair": "npx rimraf lib node_modules .git/hooks package-lock.json && npm install"
   },
   "dependencies": {
+    "canvas": "2.8.0",
     "qrcode": "1.4.4",
     "yargs": "17.2.1"
   },
@@ -64,7 +65,7 @@
     "eslint": "8.1.0",
     "eslint-config-prettier": "8.3.0",
     "husky": "7.0.4",
-    "lint-staged": "11.2.4",
+    "lint-staged": "11.2.6",
     "nodemon": "2.0.14",
     "prettier": "2.4.1",
     "semantic-release": "18.0.0",

@@ -1,6 +1,6 @@
 import yargs from 'yargs/yargs';
 import { CATEGORIES } from './homekit';
-import { isNumber } from './utils';
+import { isNumber, OUTPUT_FORMATS, OUTPUT_FORMAT_DEFAULT } from './utils';
 
 export const argv = yargs(process.argv.slice(2))
   // Attempt to detect the os locale
@@ -11,21 +11,31 @@ export const argv = yargs(process.argv.slice(2))
     category: {
       alias: 'c',
       choices: Array.from(CATEGORIES.keys()),
+      describe: 'category of the Homeit accessory',
       demandOption: true,
       type: 'string',
     },
     help: {
       alias: 'h',
     },
+    name: {
+      alias: 'n',
+      demandOption: false,
+      describe: 'name of the generated file',
+      default: 'homekit-qrcode',
+      type: 'string',
+    },
     output: {
       alias: 'o',
-      demandOption: false,
-      default: 'qrcode.svg',
-      type: 'string',
+      choices: OUTPUT_FORMATS,
+      demandOption: true,
+      describe: 'format of the generated file',
+      default: OUTPUT_FORMAT_DEFAULT,
     },
     pairingCode: {
       alias: 'p',
       demandOption: true,
+      describe: '8 digits pairing code',
       type: 'string',
     },
     setupId: {
@@ -45,5 +55,9 @@ export const argv = yargs(process.argv.slice(2))
   .example(
     'npx homekit-qrcode --category=switch --pairingCode=84131633 --setupId=3QYT',
     'Generate a QR code for a HomeKit switch',
+  )
+  .example(
+    'npx homekit-qrcode --category=switch --pairingCode=84131633 --setupId=3QYT --name=switch --output=png',
+    'Generate a QR code for a HomeKit switch as switch.png',
   )
   .parseSync();
