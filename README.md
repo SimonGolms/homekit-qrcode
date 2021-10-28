@@ -21,15 +21,17 @@ npx homekit-qrcode --category=switch --pairingCode=84131633 --setupId=3QYT
 Usage: homekit-qrcode [options]
 
 Options:
-  -h, --help                              [boolean]
-      --version      Show version number  [boolean]
-  -c, --category                          [string] [required] [choices: "other", "bridge", "fan", "garage", "lightbulb", "doorLock", "outlet", "switch", "thermostat", "sensor", "securitySystem", "door", "window", "windowCovering", "programmableSwitch", "rangeExtender", "ipCamera", "videoDoorBell", "airPurifier", "heater", "airConditioner", "humidifier", "dehumidifier", "appleTv", "speaker", "airport", "sprinkler", "faucet", "showerHead", "television", "targetController"]
-  -o, --output                            [string] [default: "qrcode.svg"]
-  -p, --pairingCode                       [string] [required]
-  -s, --setupId                           [string] [required]
+  -h, --help                                           [boolean]
+      --version      Show version number               [boolean]
+  -c, --category     category of the Homeit accessory  [string] [required] [choices: "other", "bridge", "fan", "garage", "lightbulb", "doorLock", "outlet", "switch", "thermostat", "sensor", "securitySystem", "door", "window", "windowCovering", "programmableSwitch", "rangeExtender", "ipCamera", "videoDoorBell", "airPurifier", "heater", "airConditioner", "humidifier", "dehumidifier", "appleTv", "speaker", "airport", "sprinkler", "faucet", "showerHead", "television", "targetController"]
+  -n, --name         name of the generated file        [string] [default: "homekit-qrcode"]
+  -o, --output       format of the generated file      [required] [choices: "svg", "png", "jpeg"] [default: "svg"]
+  -p, --pairingCode  8 digits pairing code             [string] [required]
+  -s, --setupId                                        [string] [required]
 
 Examples:
-  npx homekit-qrcode --category=switch --pairingCode=84131633 --setupId=3QYT Generate a QR code for a HomeKit switch
+  npx homekit-qrcode --category=switch --pairingCode=84131633 --setupId=3QYT                             Generate a QR code for a HomeKit switch
+  npx homekit-qrcode --category=switch --pairingCode=84131633 --setupId=3QYT --name=switch --output=png  Generate a QR code for a HomeKit switch as switch.png
 ```
 
 ### Output
