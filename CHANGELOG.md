@@ -1,5 +1,19 @@
 # Changelog
 
+# [3.0.0-beta.1](https://github.com/simongolms/homekit-qrcode/compare/v2.0.0...v3.0.0-beta.1) (2021-10-28)
+
+
+### Features
+
+* **arguments:** add description to option category ([9a4817a](https://github.com/simongolms/homekit-qrcode/commit/9a4817a368edb69b83ddafc68e7ebb6a1b6f2c25))
+* **arguments:** add description to option pairingCode ([c8dd482](https://github.com/simongolms/homekit-qrcode/commit/c8dd4824520f9ac95b612444815fae52bbc2c5e1))
+* add images as output formats ([9abb6a6](https://github.com/simongolms/homekit-qrcode/commit/9abb6a698c236464a5d88f3474f4e6d1b0f7f953))
+
+
+### BREAKING CHANGES
+
+* Adjustment of cli arguments. The `--output` parameter will be used to specify the output format (`svg`, `png`, `jpeg`). By default the svg format is used. The `--name` parameter is used to specify the file name. By default the file name `homekit-qrcode` is used.
+
 # [2.0.0](https://github.com/simongolms/homekit-qrcode/compare/v1.0.0...v2.0.0) (2021-10-26)
 
 
