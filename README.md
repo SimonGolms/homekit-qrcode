@@ -11,6 +11,10 @@ Generate a pairing HomeKit QR code label for your HomeKit accessory
 
 ## Usage
 
+```sh
+npx homekit-qrcode --category=switch --pairingCode=84131633 --setupId=3QYT
+```
+
 ### CLI
 
 ```sh
