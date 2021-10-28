@@ -11,6 +11,7 @@ export const argv = yargs(process.argv.slice(2))
     category: {
       alias: 'c',
       choices: Array.from(CATEGORIES.keys()),
+      describe: 'category of the Homeit accessory',
       demandOption: true,
       type: 'string',
     },
