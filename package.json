@@ -53,9 +53,9 @@
   "devDependencies": {
     "@commitlint/cli": "14.1.0",
     "@commitlint/config-conventional": "14.1.0",
-    "@semantic-release/changelog": "6.0.0",
-    "@semantic-release/git": "10.0.0",
-    "@semantic-release/github": "8.0.1",
+    "@semantic-release/changelog": "6.0.1",
+    "@semantic-release/git": "10.0.1",
+    "@semantic-release/github": "8.0.2",
     "@types/node": "16.11.6",
     "@types/qrcode": "1.4.1",
     "@types/yargs": "17.0.4",
