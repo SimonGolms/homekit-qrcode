@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.1](https://github.com/simongolms/homekit-qrcode/compare/v3.0.0...v3.0.1) (2022-01-23)
+
+
+### Bug Fixes
+
+* **arguments:** typo in category describtion ([c4a9fb9](https://github.com/simongolms/homekit-qrcode/commit/c4a9fb9da93596bf15b42fbb644e3b3bd59ba1f2))
+
 # [3.0.0](https://github.com/simongolms/homekit-qrcode/compare/v2.0.0...v3.0.0) (2021-10-28)
 
 
