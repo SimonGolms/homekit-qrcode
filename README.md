@@ -1,3 +1,7 @@
+**ℹ️ This package is deprecated and no longer maintained. Please use the successor: [homekit-code](https://github.com/simongolms/homekit-code#readme)**
+
+---
+
 # HomeKit QR Code
 
 Generate a pairing HomeKit QR code label for your HomeKit accessory
