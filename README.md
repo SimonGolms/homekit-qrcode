@@ -8,7 +8,7 @@ Generate a pairing HomeKit QR code label for your HomeKit accessory
 
 [![npm version](https://img.shields.io/npm/v/homekit-qrcode.svg)](https://www.npmjs.com/package/homekit-qrcode)
 [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/simongolms/homekit-qrcode#readme)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/simongolms/homekit-qrcode/graphs/commit-activity)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://github.com/simongolms/homekit-qrcode/graphs/commit-activity)
 [![License: MIT](https://img.shields.io/github/license/simongolms/homekit-qrcode)](https://github.com/simongolms/homekit-qrcode/blob/master/LICENSE)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/SimonGolms/homekit-qrcode/releases)
