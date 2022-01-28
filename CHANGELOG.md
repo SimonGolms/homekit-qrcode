@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.2](https://github.com/simongolms/homekit-qrcode/compare/v3.0.1...v3.0.2) (2022-01-28)
+
+
+### Bug Fixes
+
+* add deprecation information ([549a396](https://github.com/simongolms/homekit-qrcode/commit/549a3961f0d92a49fdad1b75a82e6ce6c143018d))
+
 ## [3.0.1](https://github.com/simongolms/homekit-qrcode/compare/v3.0.0...v3.0.1) (2022-01-23)
 
 
